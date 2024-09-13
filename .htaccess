@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule   ^(.*)  http://127.0.0.1:3000/$1 [P]
+<Files .env>
+    Order Allow,Deny
+    Deny from all
+</Files>
